@@ -1,0 +1,1 @@
+In progress. Learning algorithm for binary classification with logistic regression for image classification on FTC minerals (gold/silver)
