@@ -5,8 +5,8 @@ scale = 2;
 h = r * 10 * scale;
 w = 1 * 10 * scale
 %}
-h = 20;
-w =  34;
+h = 30;
+w =  30;
 filelist = readdir("pictures");
 imglist = [];
 y = [];
@@ -17,7 +17,7 @@ for i = 1:size(filelist,1)
     img = imread(["pictures/" filelist{i}]);
     img = rgb2gray(img);
     img = imresize(img, [h, w]);
-    %imshow(img);
+    imshow(img);
     imglist(j,:) = img(:);
     % get the class of the img from file name
     y(j,1) = str2num(strsplit(filelist{i},{"_","."}){2});
